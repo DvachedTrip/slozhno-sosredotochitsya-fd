@@ -7,4 +7,21 @@
   --header-footer-title: #ffc2e6;
   --footer-title-shadow: #ff0070;
   --title-and-decorated: #353430;
+  --opacity-shadow: 53, 52, 48;
+  --rec-visibility: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --background-image: url("../images/cover-image-light.png");
+  --background-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --title-color: #353430;
+  --main-text-color: #353430;
+  --header-footer-title: #ffc2e6;
+  --footer-title-shadow: #ff0070;
+  --title-and-decorated: #353430;
+  --opacity-shadow: 53, 52, 48;
+  --rec-visibility: hidden;
+  }
 }

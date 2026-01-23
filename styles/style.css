@@ -1,5 +1,3 @@
-@import url(../fonts/fonts.css);
-
 .page {
   background-image: var(--background-image);
   background-position: center;
@@ -7,9 +5,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--background-color);
-  font-family:
-    IBM Plex Mono,
-    sans-serif;
+  font-family: IBM Plex Mono, monospace, sans-serif;
   font-size: 18px;
 }
 
@@ -23,23 +19,21 @@
 }
 
 .rec {
-  display: none;
-}
-
-html.theme-dark .rec {
   display: inline-block;
   position: absolute;
   color: var(--title-and-decorated);
+  visibility: var(--rec-visibility);
   top: 10px;
   right: 38px;
   line-height: 25px;
   text-align: center;
 }
 
-html.theme-dark .rec::after {
+.rec::after {
   content: "";
   position: absolute;
   background-color: var(--title-and-decorated);
+  visibility: var(--rec-visibility);
   border-radius: 50%;
   width: 9px;
   height: 9px;
@@ -103,18 +97,18 @@ html.theme-dark .rec::after {
   line-height: 100%;
 }
 
-.header__theme-menu-button_active {
-  border: 1px solid var(--title-and-decorated);
-  pointer-events: none;
-}
-
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(var(--title-and-decorated), 0.4);
+  border: 1px solid rgba(var(--opacity-shadow), 0.4);
 }
 
 .header__theme-menu-button:focus-visible {
   outline: none;
   border-bottom: 1px solid var(--title-and-decorated);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--title-and-decorated);
+  pointer-events: none;
 }
 
 .header__theme-menu {
@@ -188,7 +182,7 @@ html.theme-dark .rec::after {
   line-height: 23.4px;
 }
 
-.card:first-of-type h3:nth-child(2) {
+.card:first-of-type h4:nth-child(2) {
   margin-block-start: 10px;
 }
 
@@ -229,7 +223,7 @@ html.theme-dark .rec::after {
 }
 
 .link:hover {
-  text-decoration: 1px solid underline;
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .link:focus {
@@ -241,7 +235,7 @@ html.theme-dark .rec::after {
     padding: 20px 20px 20px 20px;
   }
 
-  html.theme-dark .rec {
+  .rec {
     top: 20px;
     right: 48px;
   }

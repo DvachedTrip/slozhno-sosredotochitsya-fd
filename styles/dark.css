@@ -7,4 +7,21 @@
   --header-footer-title: #db00ff;
   --footer-title-shadow: #ff0070;
   --title-and-decorated: #ff0070;
+  --opacity-shadow: 255, 0, 112;
+  --rec-visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --background-image: url("../images/cover-image-dark.png");
+  --background-color: #000028;
+  --accent-color: #ff0070;
+  --title-color: #000028;
+  --main-text-color: #f1b2ce;
+  --header-footer-title: #db00ff;
+  --footer-title-shadow: #ff0070;
+  --title-and-decorated: #ff0070;
+  --opacity-shadow: 255, 0, 112;
+  --rec-visibility: visible;
+  }
 }

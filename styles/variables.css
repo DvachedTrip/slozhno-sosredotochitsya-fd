@@ -7,4 +7,6 @@
   --header-footer-title: #db00ff;
   --footer-title-shadow: #ff0070;
   --title-and-decorated: #ff0070;
+  --opacity-shadow: 255, 0, 112;
+  --rec-visibility: visible;
 }
