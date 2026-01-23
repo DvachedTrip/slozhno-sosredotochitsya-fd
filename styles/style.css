@@ -1,4 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 @import url(../fonts/fonts.css);
 
 .page {
@@ -8,7 +7,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--background-color);
-  font-family: IBM Plex Mono, sans-serif;
+  font-family:
+    IBM Plex Mono,
+    sans-serif;
   font-size: 18px;
 }
 
@@ -19,7 +20,6 @@
   block-size: 100vh;
   min-block-size: 668px;
   padding: 10px;
-  
 }
 
 .rec {
@@ -47,7 +47,6 @@ html.theme-dark .rec::after {
   margin-left: 10px;
 
   box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
-
 }
 
 .decorated-zone {
@@ -56,7 +55,7 @@ html.theme-dark .rec::after {
 
 .decorated-zone::before {
   display: inline-block;
-  content: '';
+  content: "";
   position: absolute;
   background-color: transparent;
   width: 25px;
@@ -69,7 +68,7 @@ html.theme-dark .rec::after {
 
 .decorated-zone::after {
   display: inline-block;
-  content: '';
+  content: "";
   position: absolute;
   background-color: transparent;
   width: 25px;
@@ -106,7 +105,7 @@ html.theme-dark .rec::after {
 
 .header__theme-menu-button_active {
   border: 1px solid var(--title-and-decorated);
-  pointer-events: none
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -179,7 +178,7 @@ html.theme-dark .rec::after {
   font-weight: 700;
 }
 
-.card__description{
+.card__description {
   line-height: 23.4px;
   color: var(--main-text-color);
 }
@@ -229,16 +228,16 @@ html.theme-dark .rec::after {
   text-decoration: none;
 }
 
-.link:hover{
+.link:hover {
   text-decoration: 1px solid underline;
 }
 
-.link:focus{
+.link:focus {
   outline: 1px solid var(--main-text-color);
 }
 
-@media (width >= 768px){
-  .header{
+@media (width >= 768px) {
+  .header {
     padding: 20px 20px 20px 20px;
   }
 
@@ -288,7 +287,7 @@ html.theme-dark .rec::after {
     grid-template-columns: 1fr 2fr;
   }
 
-  .gallery_container{
+  .gallery_container {
     gap: 20px;
   }
 
@@ -332,8 +331,7 @@ html.theme-dark .rec::after {
   }
 }
 
-@media (width >= 1024px){
-
+@media (width >= 1024px) {
   .header__title {
     transform: translateX(-20px);
   }
@@ -353,7 +351,11 @@ html.theme-dark .rec::after {
   }
 
   .why.cards-container {
-    grid-template-columns: 1fr clamp(29.5rem, -3.6875rem + 69.1406vw, 40.5625rem);
+    grid-template-columns: 1fr clamp(
+        29.5rem,
+        -3.6875rem + 69.1406vw,
+        40.5625rem
+      );
   }
 
   .what.cards-container {
@@ -376,7 +378,11 @@ html.theme-dark .rec::after {
   }
 
   .how.cards-container {
-    grid-template-columns: 1fr clamp(29.5rem, -3.6875rem + 69.1406vw, 40.5625rem);
+    grid-template-columns: 1fr clamp(
+        29.5rem,
+        -3.6875rem + 69.1406vw,
+        40.5625rem
+      );
   }
 
   .main {

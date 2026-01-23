@@ -1,5 +1,3 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
 *,
 *::before,
 *::after {
@@ -41,9 +39,3 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
-
-/* button {
-  all: unset;
-  box-sizing: border-box;
-  cursor: pointer;
-} */

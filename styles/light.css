@@ -1,10 +1,10 @@
 :root.theme-light {
   --background-image: url("../images/cover-image-light.png");
-  --background-color: #FFF1F7;
-  --accent-color: #FF8DCB;
+  --background-color: #fff1f7;
+  --accent-color: #ff8dcb;
   --title-color: #353430;
   --main-text-color: #353430;
-  --header-footer-title: #FFC2E6;
-  --footer-title-shadow: #FF0070;
+  --header-footer-title: #ffc2e6;
+  --footer-title-shadow: #ff0070;
   --title-and-decorated: #353430;
 }
